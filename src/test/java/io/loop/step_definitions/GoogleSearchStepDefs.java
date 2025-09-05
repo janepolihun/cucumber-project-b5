@@ -28,6 +28,7 @@ GoogleSearchPage googleSearchPage = new GoogleSearchPage();
     @When("user types Loop Academy in the google search box and clicks enter")
     public void user_types_loop_academy_in_the_google_search_box_and_clicks_enter() {
          googleSearchPage.searchBox.sendKeys("Loop Academy" + Keys.ENTER);
+
     }
 
 
