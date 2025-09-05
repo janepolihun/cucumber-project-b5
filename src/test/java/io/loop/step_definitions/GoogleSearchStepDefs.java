@@ -37,15 +37,16 @@ GoogleSearchPage googleSearchPage = new GoogleSearchPage();
            assertEquals("Expected does not match actual", "Loop Academy - Google Search", actual);
     }
 
+
     @When("user types {string} in the google search box and clicks enter")
     public void user_types_in_the_google_search_box_and_clicks_enter(String input) {
-        googleSearchPage.searchButton.sendKeys(input + Keys.ENTER);
+        googleSearchPage.searchBox.sendKeys(input + Keys.ENTER);
     }
 
     @Then("user should be able to see {string} in the google title")
     public void user_should_be_able_to_see_search_in_the_google_title(String expectedTitle) {
-//        WebDriverWait wait = new WebDriverWait( Driver.getDriver(), Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.titleIs(expectedTitle));
+        WebDriverWait wait = new WebDriverWait( Driver.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.titleIs(expectedTitle));
         String actual = Driver.getDriver().getTitle();
         assertEquals("Expected does NOT match actual", expectedTitle, actual);
     }
