@@ -1,0 +1,23 @@
+package io.loop.utilities;
+
+public class DocuportConstants {
+    public static final String DOCUPORT_TEST = "https://beta.docuport.app";
+
+    public static final String USERNAME_CLIENT = "b1g2_client@gmail.com";
+    public static final String USERNAME_SUPERVISOR = "b1g2_supervisor@gmail.com";
+    public static final String USERNAME_ADVISOR = "b1g2_advisor@gmail.com";
+    public static final String USERNAME_EMPLOYEE = "b1g2_employee@gmail.com";
+    public static final String PASSWORD_GROUP2 = "Group2";
+    // message
+    public static final String ERROR_MESSAGE_FOR_EMPTY_PASSWORD = "Please enter your password";
+    // logo
+    public static final String EXPECTED_LOGO_DOCUPORT = "Docuport";
+    //forgot password URL
+    public static final String FORGOT_PASSWORD_URL = "https://beta.docuport.app/reset-password";
+    public static final String RESET_PASSWORD_MESSAGE= "Enter the email address associated with your account";
+    //email for reset password
+
+    public static final String EMAIL_FOR_PASSWORD_RESET = "forgotpasswordg1@gmail.com";
+
+
+}
