@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/html-reports/cucumber-report.html",
-                "json:target/json-reports/json-report.json"},
+        plugin = {"html:target/html-reports/cucumber-report.html", // type of report
+                "json:target/json-reports/json-report.json"},      // location where we store reports
         features = "src/test/resources/features",
         glue = "io/loop/step_definitions",
         dryRun = false,
-        tags = "@test",
+        tags = " @google_search_data_table",
         monochrome = true
 
 )

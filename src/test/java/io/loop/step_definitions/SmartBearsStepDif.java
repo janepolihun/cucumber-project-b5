@@ -43,18 +43,19 @@ public class SmartBearsStepDif {
 
     @Then("user should print out each link text on this page")
     public void user_should_print_out_each_link_text_on_this_page() {
-          for (WebElement link : smartBearsSoftware.links) {
-              String text = link.getText();
-              if(text.isEmpty() || text.isBlank()){
-                  System.out.println("Link text is Empty");
-              } else {
-                  System.out.println(text);
-              }
-          }
+        for (WebElement link : smartBearsSoftware.links) {
+            String text = link.getText();
+            if (text.isEmpty() || text.isBlank()) {
+                System.out.println("Link text is Empty");
+            } else {
+                System.out.println(text);
+            }
+        }
     }
-
-
 }
+
+
+
 
 
 
