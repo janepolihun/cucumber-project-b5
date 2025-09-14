@@ -15,6 +15,7 @@ public class ProductPage {
     }
 
     public String getProductPrice(String product){
+
         String actualPrice = Driver.getDriver().findElement(By.xpath("//a[normalize-space(.)='"+product+"']/../../h5")).getText();
         return actualPrice.substring(1);
     }

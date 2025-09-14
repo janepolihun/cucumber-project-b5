@@ -1,13 +1,13 @@
 package io.loop.step_definitions;
 
-import io.cucumber.java.*;
+import io.cucumber.java.*; // connection comes from the cucumber java
 import io.loop.utilities.BrowserUtils;
 import io.loop.utilities.Driver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hook {
-
+        // has tags from cucumber java
     @Before
     public void setUp(Scenario scenario) {
         Driver.getDriver();
