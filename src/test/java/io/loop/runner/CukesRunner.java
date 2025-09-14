@@ -8,11 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/html-reports/cucumber-report.html", // type of report
                 "json:target/json-reports/json-report.json"},      // location where we store reports
-        features = "src/test/resources/features",
-        glue = "io/loop/step_definitions",
-        dryRun = false,
-        tags = "@ListOfMap",
-        monochrome = true
+        features = "src/test/resources/features", // where is my feature file are located
+        glue = "io/loop/step_definitions", // where my step defs are
+        dryRun = false, // check do we have
+        tags = "@mapListProduct",
+        monochrome = true,
+        publish = false // create the report on cucumber website , if "false" it does not create report
 
 )
 
