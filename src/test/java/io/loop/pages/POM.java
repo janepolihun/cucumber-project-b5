@@ -6,6 +6,7 @@ public class POM {
     private GoogleSearchPage googleSearchPage;
     private HomePage homePage;
     private ProductPage productPage;
+    private WikiSearchPage wikiSearchPage;
 
     public LoginPage getLoginPage() {
         if (loginPage == null){
@@ -34,4 +35,12 @@ public class POM {
         }
         return productPage;
     }
+
+    public WikiSearchPage getWikiSearchPage() {
+        if(wikiSearchPage == null){
+            wikiSearchPage = new WikiSearchPage();
+        }
+        return wikiSearchPage;
+    }
+
 }
