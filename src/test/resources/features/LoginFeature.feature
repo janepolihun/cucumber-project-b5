@@ -1,5 +1,5 @@
-
 Feature: Docuport Login Logout Feature
+
   Background: this is for navigating Docuport login page
     Given user is on Docuport login page
 
@@ -36,3 +36,9 @@ Feature: Docuport Login Logout Feature
     And user clicks login button
     Then user should be able to see the home page for supervisor
 
+  @dataTableLogin @smoke
+  Scenario: Login as a client map practice
+    When user enters credentials
+      | username | b1g2_client@gmail.com |
+      | password | Group2                |
+    Then user should be able to see the home page for client
