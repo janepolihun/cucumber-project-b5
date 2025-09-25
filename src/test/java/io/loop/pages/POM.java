@@ -7,6 +7,7 @@ public class POM {
     private HomePage homePage;
     private ProductPage productPage;
     private WikiSearchPage wikiSearchPage;
+    private SmartBearsSoftware smartBearsSoftware;
 
     public LoginPage getLoginPage() {
         if (loginPage == null){
@@ -41,6 +42,13 @@ public class POM {
             wikiSearchPage = new WikiSearchPage();
         }
         return wikiSearchPage;
+    }
+
+    public SmartBearsSoftware getSmartBearsSoftware () {
+        if(smartBearsSoftware == null){
+           smartBearsSoftware = new SmartBearsSoftware();
+        }
+        return smartBearsSoftware;
     }
 
 }

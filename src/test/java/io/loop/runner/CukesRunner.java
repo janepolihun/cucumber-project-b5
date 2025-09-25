@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features", // where is my feature file are located
         glue = "io/loop/step_definitions", // where my step defs are
         dryRun = false, // part cucumber if false run all scenarios if true - cucumber create snippets for stepDefs
-        tags = "@smoke",
+        tags = "@smart_bear_software_order",
         monochrome = true,
         publish = false // create the report on cucumber website , if "false" it does not create report
 
