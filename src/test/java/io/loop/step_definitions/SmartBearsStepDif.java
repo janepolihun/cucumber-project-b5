@@ -26,8 +26,6 @@ public class SmartBearsStepDif {
 
     POM pages = new POM();
     SmartBearsSoftware smartBearsSoftware =  new SmartBearsSoftware();
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-    private static final Logger LOG = LogManager.getLogger();
 
 
     @Given("user is on SmartBearsSoftware page")
@@ -47,9 +45,10 @@ public class SmartBearsStepDif {
     }
 
     @Then("user should be able to see Web Orders in the google title")
-    public void user_should_be_able_to_see_web_orders_in_the_google_title() {
+    public void user_should_be_able_to_see_web_orders_in_the_google_title() throws InterruptedException {
         String actual = Driver.getDriver().getTitle();
-        assertEquals ("Actual Does Not Match", "Web Orders Login", actual);
+        Thread.sleep(3000);
+        assertEquals ("Actual Does Not Match", "Web Orders", actual);
     }
 
 

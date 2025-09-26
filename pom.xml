@@ -22,7 +22,7 @@
                 <version>3.3.1</version>
                 <configuration>
                     <parallel>methods</parallel>
-                    <threadCount>3</threadCount>
+                    <threadCount>1</threadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <useUnlimitedThreads>false</useUnlimitedThreads>
                     <perCoreThreadCount>false</perCoreThreadCount>
@@ -34,6 +34,24 @@
         </plugins>
     </build>
     <dependencies>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
