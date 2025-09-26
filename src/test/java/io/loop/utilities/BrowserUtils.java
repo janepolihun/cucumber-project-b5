@@ -17,7 +17,7 @@ public class BrowserUtils {
 
     /**
      * takes screenshot
-     * @author nsh
+     * @author jp
      */
     public static void takeScreenshot(){
         try{
@@ -38,7 +38,7 @@ public class BrowserUtils {
      * @param driver
      * @param expectedUrl
      * @param expectedTitle
-     * @author NSH
+     * @author jp
      * implements assertion
      */
     public static void switchWindowAndValidate(WebDriver driver, String expectedUrl, String expectedTitle) {
@@ -61,7 +61,7 @@ public class BrowserUtils {
     /**
      * @param driver
      * @param targetTitle
-     * @author NSH
+     * @author jp
      */
     public static void switchToWindow(WebDriver driver, String targetTitle) {
         String origin = driver.getWindowHandle();
@@ -79,11 +79,11 @@ public class BrowserUtils {
      * clicks any link from loop practice
      *
      * @param nameOfPage
-     * @author nsh
+     * @author jp
      */
     public static void loopLinkClick(String nameOfPage) {
         WebElement element = Driver.getDriver().findElement(By.xpath("//a[.='" + nameOfPage + "']"));
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(DocuportConstants.LARGE));
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
 
@@ -93,7 +93,7 @@ public class BrowserUtils {
      * @param element
      * @param timeout
      * @return element
-     * @author nsh
+     * @author jp
      */
     public static WebElement waitForClickable(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
@@ -104,7 +104,7 @@ public class BrowserUtils {
      * waits for provided element to be invisible on the page
      * @param element
      * @param timeaout
-     * @author nsh
+     * @author jp
      */
     public static void waitForInvisibility(WebElement element, int timeaout){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeaout));
@@ -115,7 +115,7 @@ public class BrowserUtils {
      * waits for provided element to be visible on the page
      * @param element
      * @param timeaout
-     * @author nsh
+     * @author jp
      */
     public static WebElement waitForVisibility(WebElement element, int timeaout){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeaout));
