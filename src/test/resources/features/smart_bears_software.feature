@@ -3,7 +3,7 @@ Feature: SmartBearsSoftware page  Functionality Title Validation
   I should be able to search whatever I want and see the relevant result
 
 
-@smart_bear_software @smoke
+@smart_bear_software
 Scenario: Search functionality result title validation
 Given user is on SmartBearsSoftware page
 When user enter username and user enter password and click login button

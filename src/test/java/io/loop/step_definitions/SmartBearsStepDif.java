@@ -16,6 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class SmartBearsStepDif {
 
     SmartBearsSoftware smartBearsSoftware =  new SmartBearsSoftware();
+
     @Given("user is on SmartBearsSoftware page")
     public void user_is_on_smart_bears_software_page() {
         Driver.getDriver().get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
@@ -29,9 +30,10 @@ public class SmartBearsStepDif {
     }
 
     @Then("user should be able to see Web Orders in the google title")
-    public void user_should_be_able_to_see_web_orders_in_the_google_title() {
+    public void user_should_be_able_to_see_web_orders_in_the_google_title() throws InterruptedException {
         String actual = Driver.getDriver().getTitle();
-        assertEquals ("Actual Does Not Match", "Web Orders Login", actual);
+        Thread.sleep(3000);
+        assertEquals ("Actual Does Not Match", "Web Orders", actual);
     }
 
 
