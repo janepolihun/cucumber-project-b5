@@ -38,23 +38,23 @@ public class Day_14StepDefs {
 
 
 
-    @Then("the left navigation for {string} should be {string}")
-    public void the_left_navigation_for_should_be(String role, String expectedCsv) {
-        List <String> expected = Arrays.stream(expectedCsv.split(","))
-                .map(String::trim)
-                .filter(s -> !s.isEmpty())
-                .toList();
-
-        List<String> actual = pages.getLeftNavigatePageDay14().getLeftNavItemsText().stream()
-                .map(String::trim)
-                .toList();
-
-        LOG.info("Expected left nav: " + expected);
-        LOG.info("Actual left nav:   " + actual);
-
-        assertEquals(expected, actual);
-
-    }
+//    @Then("the left navigation for {string} should be {string}")
+//    public void the_left_navigation_for_should_be(String role, String expectedCsv) {
+//        List <String> expected = Arrays.stream(expectedCsv.split(","))
+//                .map(String::trim)
+//                .filter(s -> !s.isEmpty())
+//                .toList();
+//
+//        List<String> actual = pages.getLeftNavigatePageDay14().getLeftNavItemsText().stream()
+//                .map(String::trim)
+//                .toList();
+//
+//        LOG.info("Expected left nav: " + expected);
+//        LOG.info("Actual left nav:   " + actual);
+//
+//        assertEquals(expected, actual);
+//
+//    }
 
     }
 

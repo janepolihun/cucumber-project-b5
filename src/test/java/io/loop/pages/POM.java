@@ -9,7 +9,8 @@ public class POM {
     private WikiSearchPage wikiSearchPage;
     private ReceivedDocPage receivedDocPage;
     private LeftNavigatePage leftNavigatePage;
-    private LeftNavigatePageDay14 day14_leftNavigatePagesDocuport;
+    //private LeftNavigatePageDay14 day14_leftNavigatePagesDocuport;
+    private MyUploadsPage myUploadsPage;
 
     public LoginPage getLoginPage() {
         if (loginPage == null){
@@ -60,12 +61,19 @@ public class POM {
         return leftNavigatePage;
     }
 
-    public LeftNavigatePageDay14 getLeftNavigatePageDay14() {
+//    public LeftNavigatePageDay14 getLeftNavigatePageDay14() {
+//
+//        if (day14_leftNavigatePagesDocuport == null){
+//            day14_leftNavigatePagesDocuport = new LeftNavigatePageDay14();
+//        }
+//        return day14_leftNavigatePagesDocuport;
+//    }
 
-        if (day14_leftNavigatePagesDocuport == null){
-            day14_leftNavigatePagesDocuport = new LeftNavigatePageDay14();
-        }
-        return day14_leftNavigatePagesDocuport;
+    public MyUploadsPage getMyUploadsPage() {
+         if (myUploadsPage == null){
+             myUploadsPage = new MyUploadsPage();
+         }
+        return myUploadsPage;
+
     }
-
 }
