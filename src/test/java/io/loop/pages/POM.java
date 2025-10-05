@@ -7,10 +7,7 @@ public class POM {
     private HomePage homePage;
     private ProductPage productPage;
     private WikiSearchPage wikiSearchPage;
-    private ReceivedDocPage receivedDocPage;
-    private LeftNavigatePage leftNavigatePage;
-    //private LeftNavigatePageDay14 day14_leftNavigatePagesDocuport;
-    private MyUploadsPage myUploadsPage;
+    private SmartBearsSoftware smartBearsSoftware;
 
     public LoginPage getLoginPage() {
         if (loginPage == null){
@@ -47,33 +44,11 @@ public class POM {
         return wikiSearchPage;
     }
 
-    public ReceivedDocPage getReceivedDocPage() {
-        if (receivedDocPage == null){
-            receivedDocPage = new ReceivedDocPage();
+    public SmartBearsSoftware getSmartBearsSoftware () {
+        if(smartBearsSoftware == null){
+           smartBearsSoftware = new SmartBearsSoftware();
         }
-        return receivedDocPage;
+        return smartBearsSoftware;
     }
 
-    public LeftNavigatePage getleftNavigatePage() {
-        if (leftNavigatePage == null){
-            leftNavigatePage = new LeftNavigatePage();
-        }
-        return leftNavigatePage;
-    }
-
-//    public LeftNavigatePageDay14 getLeftNavigatePageDay14() {
-//
-//        if (day14_leftNavigatePagesDocuport == null){
-//            day14_leftNavigatePagesDocuport = new LeftNavigatePageDay14();
-//        }
-//        return day14_leftNavigatePagesDocuport;
-//    }
-
-    public MyUploadsPage getMyUploadsPage() {
-         if (myUploadsPage == null){
-             myUploadsPage = new MyUploadsPage();
-         }
-        return myUploadsPage;
-
-    }
 }
