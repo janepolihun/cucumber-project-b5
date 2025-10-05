@@ -30,6 +30,20 @@ public class LoginPage {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement continueButton;
 
+    @FindBy (xpath = "//h1[.=' Login ']")
+    public WebElement loginText;
+
+    @FindBy (xpath = "//img[@src='/img/logo.d7557277.svg']")
+    public WebElement docuportText;
+
+    @FindBy (xpath = "//h3[.='Choose account']")
+    public WebElement chooseAccountText;
+
+
+
+
+
+
     public void insertField (String field, String input){
         switch (field.toLowerCase().trim()) {
             case "username" -> BrowserUtils.waitForVisibility(userNameInput, DocuportConstants.LARGE).sendKeys(input);
@@ -38,16 +52,17 @@ public class LoginPage {
         }
     }
 
-    public void clickButton(String button){
+    public void clickButton(String button) throws InterruptedException {
         switch (button.toLowerCase().trim()){
             case "login" -> BrowserUtils.waitForClickable(loginButton, DocuportConstants.LARGE).click();
-            case "continue" -> {
-                try {
-                    BrowserUtils.waitForClickable(continueButton, DocuportConstants.LARGE).click();
-                } catch (StaleElementReferenceException e){
-                    WebElement element = Driver.getDriver().findElement(By.xpath("//button[.//span[normalize-space()='Continue']]"));
-                    BrowserUtils.waitForClickable(element, DocuportConstants.LARGE).click();
-                }
+
+                case "continue" -> {
+                    try {
+                        BrowserUtils.waitForClickable(continueButton, DocuportConstants.LARGE).click();
+                    }catch (StaleElementReferenceException e){
+                        WebElement element = Driver.getDriver().findElement(By.xpath("//span[.=' Continue ']"));
+                        element.click();
+                    }
             }
             default -> throw new IllegalArgumentException("Not such a button: " + button);
         }
@@ -79,5 +94,7 @@ public class LoginPage {
 //        passwordInput.sendKeys(password);
 //
 //    }
+
+
 
 }

@@ -42,7 +42,7 @@ public class SampleDocuportStepDefs {
                 LOG.info(button + " - was successfully clicked");
             }
             case "left navigate" -> {
-                pages.getleftNavigatePage().clickButton(button);
+                pages.getLeftNavigatePage().clickButton(button);
                 LOG.info(button + " - was successfully clicked");
             }
             case "received doc" -> {

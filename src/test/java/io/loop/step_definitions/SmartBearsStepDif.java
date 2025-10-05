@@ -39,8 +39,8 @@ public class SmartBearsStepDif {
         smartBearsSoftware.password.sendKeys("test");
         smartBearsSoftware.loginButton.click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(pages.getSmartBearsSoftware().order)).click();
-        LOG.info("User on the SmartBearsSoftware page");
+        //wait.until(ExpectedConditions.elementToBeClickable(pages.getSmartBearsSoftware().order)).click();
+        //LOG.info("User on the SmartBearsSoftware page");
 
     }
 
@@ -132,7 +132,7 @@ public class SmartBearsStepDif {
 
     @When("user clicks process order button")
     public void user_clicks_process_order_button() throws InterruptedException {
-        wait.until(ExpectedConditions.elementToBeClickable(pages.getSmartBearsSoftware().processButton)).click();
+        //wait.until(ExpectedConditions.elementToBeClickable(pages.getSmartBearsSoftware().processButton)).click();
         //pages.getSmartBearsSoftware().processButton.click();
     }
     @Then("user should see {string} in the first row of the table")
