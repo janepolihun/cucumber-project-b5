@@ -8,6 +8,9 @@ public class POM {
     private ProductPage productPage;
     private WikiSearchPage wikiSearchPage;
     private SmartBearsSoftware smartBearsSoftware;
+    private ReceivedDocPage receivedDocPage;
+    private LeftNavigatePage leftNavigatePage;
+    private MyUploadsPage myUploadsPage;
 
     public LoginPage getLoginPage() {
         if (loginPage == null){
@@ -49,6 +52,27 @@ public class POM {
            smartBearsSoftware = new SmartBearsSoftware();
         }
         return smartBearsSoftware;
+    }
+
+    public ReceivedDocPage getReceivedDocPage() {
+        if(receivedDocPage == null){
+            receivedDocPage = new ReceivedDocPage();
+        }
+        return receivedDocPage;
+    }
+
+    public LeftNavigatePage getLeftNavigatePage() {
+        if(leftNavigatePage == null){
+            leftNavigatePage = new LeftNavigatePage();
+        }
+        return leftNavigatePage;
+    }
+
+    public MyUploadsPage getMyUploadsPage() {
+        if(myUploadsPage == null){
+            myUploadsPage = new MyUploadsPage();
+        }
+        return myUploadsPage;
     }
 
 }
