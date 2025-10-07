@@ -14,3 +14,5 @@ Feature: Practice soft assertions
     And user clicks "invitation" button on "Left navigate" page
     And user validates all assertions
 
+
+

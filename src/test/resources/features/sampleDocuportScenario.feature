@@ -19,3 +19,4 @@ Feature: Docuport Sample Scenario
     # if sending to input from html
     And user clicks "Upload file" button on "My uploads" page
     And user uploads a document
+

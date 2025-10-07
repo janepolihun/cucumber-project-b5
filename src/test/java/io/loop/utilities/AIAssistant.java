@@ -23,4 +23,6 @@ public class AIAssistant {
         String response = ChatGPTClient.getResponseFromPrompt(prompt);
         return response;
     }
+
+
 }

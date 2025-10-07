@@ -45,3 +45,4 @@ Feature: product data table practice
       | Phones   | Samsung galaxy s6 - 360  | Nokia lumia 1520 - 820 | Nexus 6 - 650     |
       | Laptops  | Sony vaio i5 - 790       | Sony vaio i7 - 790   | MacBook air - 700 |
       | Monitors | Apple monitor 24 - 400 | ASUS Full HD -230      |                   |
+

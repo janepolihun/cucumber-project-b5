@@ -54,4 +54,7 @@ public class ClientStepDefs {
     public void user_validates_all_assertions() {
           softAssertions.assertAll();
     }
+
+
+
 }

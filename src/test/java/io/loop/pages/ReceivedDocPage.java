@@ -77,5 +77,7 @@ public class ReceivedDocPage {
             case "document name" -> BrowserUtils.waitForVisibility(documentName, DocuportConstants.LARGE).sendKeys(input);
             default -> throw new IllegalArgumentException("No such a field: " + field);
         }
+
+
     }
 }

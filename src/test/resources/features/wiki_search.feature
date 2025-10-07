@@ -10,3 +10,5 @@ Feature: Wikipedia Search Functionality Title Verification
       | Steve Jobs | wiki title   |
       | Steve Jobs | main header  |
       | Steve Jobs | image header |
+
+

@@ -6,3 +6,5 @@ Feature: SmartBearsSoftware page  Functionality Title Validation
     Given user is on SmartBearsSoftware page
     When user enter username and user enter password and click login button
 
+
+

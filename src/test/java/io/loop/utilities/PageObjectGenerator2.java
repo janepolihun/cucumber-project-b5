@@ -113,6 +113,7 @@ public class PageObjectGenerator2 {
         return tag;
     }
 
+
     private static String dedupe(String candidate, Map<String,Integer> counts) {
         counts.putIfAbsent(candidate, 0);
         int c = counts.get(candidate);

@@ -20,3 +20,5 @@ public class GoogleSearchPage {
     @FindBy (xpath = "//div[@class='wvKXQ']")
     public WebElement capital;
 }
+
+

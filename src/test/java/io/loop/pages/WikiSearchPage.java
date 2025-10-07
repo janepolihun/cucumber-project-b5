@@ -24,3 +24,5 @@ public class WikiSearchPage {
     public WebElement imageHeader;
 
 }
+
+
