@@ -66,5 +66,7 @@ public class LeftNavigatePage {
             case "my uploads" -> BrowserUtils.waitForClickable(myUploads, DocuportConstants.LARGE).click();
             default -> throw new IllegalArgumentException("Not such a button: " + button);
         }
+
+
     }
 }

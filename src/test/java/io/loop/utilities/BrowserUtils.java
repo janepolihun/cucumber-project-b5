@@ -285,4 +285,6 @@ public class BrowserUtils {
                 .map(WebElement :: getText)
                 .collect(Collectors.toList());
     }
+
+
 }

@@ -84,4 +84,6 @@ public class SmartBearsSoftware {
         Select select = new Select(productTypeDropdown);
         select.selectByVisibleText(product);
     }
+
+
 }

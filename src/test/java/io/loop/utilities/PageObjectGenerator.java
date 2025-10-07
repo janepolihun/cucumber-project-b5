@@ -87,4 +87,6 @@ public class PageObjectGenerator {
 
         return camelCaseString.toString();
     }
+
+
 }

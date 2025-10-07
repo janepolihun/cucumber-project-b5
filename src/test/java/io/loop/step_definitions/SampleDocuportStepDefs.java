@@ -67,4 +67,6 @@ public class SampleDocuportStepDefs {
 //          BrowserUtils.uploadFileForMac("/Users/janepoligyn/Desktop/test");
 //        BrowserUtils.uploadFileUsingAppleScript("/Users/janepoligyn/Desktop/test");
     }
+
+
 }

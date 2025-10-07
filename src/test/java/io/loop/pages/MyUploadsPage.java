@@ -28,5 +28,7 @@ public class MyUploadsPage {
             case "upload file" -> BrowserUtils.waitForClickable(uploadsFile, DocuportConstants.LARGE).click();
             default -> throw new IllegalArgumentException("Not such a button: " + button);
         }
+
+
     }
 }

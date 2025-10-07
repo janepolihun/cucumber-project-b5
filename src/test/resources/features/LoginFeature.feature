@@ -42,3 +42,4 @@ Feature: Docuport Login Logout Feature
       | username | b1g2_client@gmail.com |
       | password | Group2                |
     Then user should be able to see the home page for client
+
